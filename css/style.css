@@ -336,7 +336,7 @@ p span {
    
 }    
 .projekat:hover .middle{
-    animation:text 1s ;
+    animation:text 0.5s ;
     display: block;
 }    
 @keyframes text{
@@ -354,6 +354,7 @@ p span {
 }
 .mapa{
     width:60%;
+    margin-left: 50px;
 }
 .iframe{
     border: solid 2px #beafc4;
@@ -364,6 +365,47 @@ p span {
     border:5px solid #6f4dae;
     border-radius: 7px;
     padding: 20px;
+    margin-right: 50px;
+}
+#forma input[id="ime"]{
+    width:250px;
+    height:30px;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 2px solid #1c1b57;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#forma input[id="mejl"]{
+    width:290px;
+    height:30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #1c1b57;
+}
+#forma input[type="checkbox"]{
+   margin-right: 5px;
+   margin-left: 10px;
+}
+#forma p{
+    margin-top: 30px;
+    color:#1c1b57;
+    font-size: 20px;
+    font-weight: bold;
+}
+#forma [id="poruka"]{
+    width:300px;
+    height:70px;
+    border-radius: 5px;
+}
+#forma input[name="dugme"]{
+    padding: 15px 30px;
+    border-radius: 7px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: #5E60CE;
+    color:#fff;
 }
 footer{
     width:95%;
