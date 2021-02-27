@@ -217,12 +217,12 @@ p span {
 }
 #slika1{
     width:80%;
-    height:410px;
-    background-image:url("../img/IMG_0857.png");
+    height:390px;
+    background-image:url("../img/Manja.png");
     background-size: cover;
     position:absolute;
     left:30px;
-    top:-40px;
+    top:-10px;
 }
 .blok3{
     width:30%;
@@ -239,7 +239,7 @@ p span {
     width:20%;
     background-color: #fff;
     padding: 50px 0px;
-    border-radius: 7px;
+    border-radius: 20px;
     border-style: outset;
     position:relative;
 }
@@ -267,8 +267,9 @@ p span {
 }
 .theFront{
     background-color: #fff;
-    border-radius: 7px;
     border-style: outset;
+    border-radius: 15px;
+
 }
 .theFront i{
     color:#1c1b57;
@@ -282,7 +283,7 @@ p span {
 .theBack{
     background: rgb(28,27,87);
     color:#fff;
-    border-radius: 7px;
+    border-radius: 15px;
     border-style: outset; 
     transform:rotateY(180deg);
 }
@@ -352,20 +353,22 @@ p span {
     font-weight:bold;
     position: relative;
 }
-.mapa{
-    width:60%;
-    margin-left: 50px;
+.message{
+    width:40%;
 }
-.iframe{
-    border: solid 2px #beafc4;
-    border-radius: 7px;  
+.message img{
+    width:80%;
+    margin-left: 60px;
 }
 .contact{
     width:35%;
     border:5px solid #6f4dae;
     border-radius: 7px;
     padding: 20px;
-    margin-right: 50px;
+    color:#1c1b57;
+}
+#forma{
+    margin-left:70px;
 }
 #forma input[id="ime"]{
     width:250px;
@@ -398,6 +401,7 @@ p span {
     width:300px;
     height:70px;
     border-radius: 5px;
+    border-bottom:2px solid #1c1b57;
 }
 #forma input[name="dugme"]{
     padding: 15px 30px;
