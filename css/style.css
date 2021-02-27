@@ -217,12 +217,12 @@ p span {
 }
 #slika1{
     width:80%;
-    height:390px;
-    background-image:url("../img/Manja.png");
+    height:420px;
+    background-image:url("../img/anica\ iseceno\ bolje\ krug.png");
     background-size: cover;
     position:absolute;
     left:30px;
-    top:-10px;
+    top:-30px;
 }
 .blok3{
     width:30%;
@@ -380,7 +380,7 @@ p span {
     border-radius: 5px;
 }
 #forma input[id="mejl"]{
-    width:290px;
+    width:250px;
     height:30px;
     padding: 5px 10px;
     border-radius: 5px;
@@ -398,7 +398,7 @@ p span {
     font-weight: bold;
 }
 #forma [id="poruka"]{
-    width:300px;
+    width:270px;
     height:70px;
     border-radius: 5px;
     border-bottom:2px solid #1c1b57;
