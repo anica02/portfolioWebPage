@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="keywords" content="web, about,skills, projects"/>
+        <meta name="keywords" content="web, about,skills, projects, contact"/>
         <meta name="description" content="A web site about me, my skills and my projects"/>
         <title>My Portfolio</title>
         <link rel="shortcut icon" href="img/—Pngtree—vector portfolio icon_4171382.png"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
          <script src="https://kit.fontawesome.com/ce9a3cdf18.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -16,14 +17,12 @@
                <a href="index.html"><img src="img/logo1.png"/></a> 
             </div>
            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                        <a href="#about">ABOUT</a>
-                        <a href="#skills">SKILLS</a>
-                        <a href="#projects">PROJECTS</a>
-                        <a href="#contact">CONTACT</a>
-                    </li>
+                <ul class="d-flex">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>  
+                    <li><a href="#projects">PROJECTS</a></li> 
+                    <li><a href="#contact">CONTACT</a></li>  
                 </ul>
             </nav>
         </header>
@@ -41,27 +40,27 @@
         </div>
         <div class="container">
             <h1><a name="about">ABOUT ME</a></h1>
-            <div class="region d-flex">
-                <div id="about">
-                    <div id="nesto"><h2>INFO</h2></div>
-                    <div id="text2">
-                        <p><span>Name:</span> Anica Radenković</p>
-                        <p><span>Date of birth:</span> February 14, 2002</p>
-                        <p><span>Occupation:</span> Student</p>
-                        <p><span>Email: </span>anica.radenkovic&#46;57&#46;20&#64;ict&#46;edu&#46;rs</p>
-                        <p><span>Phone:</span> 061 30 69 812 </p>
-                        <p><span>Personal description:</span><br/>- creative, social, hard working</p>
+            <div class="region d-flex space f-wrap">
+                    <div id="about">
+                        <div id="nesto"><h2>INFO</h2></div>
+                        <div id="text2">
+                            <p><span>Name:</span> Anica Radenković</p>
+                            <p><span>Date of birth:</span> February 14, 2002</p>
+                            <p><span>Occupation:</span> Student</p>
+                            <p><span>Email: </span>anica.radenkovic&#46;57&#46;20&#64;ict&#46;edu&#46;rs</p>
+                            <p><span>Phone:</span> 061 30 69 812 </p>
+                            <p><span>Personal description:</span><br/>- creative, social, hard working</p>
+                        </div>
+                        <p><a href="#skills">My skills</a></p>    
                     </div>
-                    <p><a href="#skills">My skills</a></p>    
-                </div>
-                <div id="text3">
-                    <div id="nesto"><h2>EDUCATION</h2></div>
-                    <p  class="margina-20px">Currently styding at ICT College of Vocational Studies</p>
-                    <p class="margina-20px"><span>Section: </span>Internet technologies</p>
-                    <p class="margina-20px"><span>Degree:</span> 1</p>
-                    <p><span>Title when finished:</span><br/><br> Professional engineer of electrical engineering and computer science.</p>
-                    <img src="img/logo_visoka_ict_skola_1.png"/>
-                </div>
+                    <div id="text3">
+                        <div id="nesto"><h2>EDUCATION</h2></div>
+                        <p  class="margina-20px">Currently styding at ICT College of Vocational Studies</p>
+                        <p class="margina-20px"><span>Section: </span>Internet technologies</p>
+                        <p class="margina-20px"><span>Degree:</span> 1</p>
+                        <p><span>Title when finished:</span><br/><br> Professional engineer of electrical engineering and computer science.</p>
+                        <img src="img/logo_visoka_ict_skola_1.png"/>
+                    </div>
                 <div id="blok">
                     <div id="blok1"></div>
                     <div id="blok2"></div>
@@ -71,7 +70,7 @@
         </div>
         <div class="container">
             <h1><a name="skills">SKILLS</a></h1>
-            <div class="region d-flex space ">
+            <div class="region d-flex f-wrap space">
                 <div class="main">
                     <div class="thecard">
                         <div class="theFront flex">
@@ -79,7 +78,7 @@
                             <h2>HTML 5</h2>
                         </div>
                         <div class="theBack">
-                            <h3>HyperText Markup Language</h3>
+                            <h3>HyperText Markup <br/>Language</h3>
                             <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web</p>
                         </div>
                     </div>
@@ -91,7 +90,7 @@
                             <h2>CSS</h2>
                         </div>
                         <div class="theBack">
-                            <h3>Cascading Style Sheets</h3> 
+                            <h3>Cascading Style<br/> Sheets</h3> 
                             <p>CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</p>
                         </div>
                     </div>
@@ -115,7 +114,7 @@
                             <h2>SASS</h2>
                         </div>
                         <div class="theBack">
-                            <h3>Syntactically awesome style sheets</h3>
+                            <h3>Syntactically awesome<br/> style sheets</h3>
                             <p>SASS a preprocessor scripting language that is interpreted or compiled CSS</p>
                         </div>
                     </div>
@@ -124,7 +123,7 @@
         </div>
         <div class="container">
             <h1><a name="projects">PROJECTS</a></h1>
-            <div class="region d-flex space">
+            <div class="region d-flex f-wrap space">
                 <div class="projekat">
                     <a href="https://flowerlovers.000webhostapp.com/html/index.html" target="_blank"><img src="img/Projekat 1.png" class="image"></a>
                    <div class="middle">
@@ -162,11 +161,11 @@
                         <input type="text" name="name" id="ime" placeholder="Your Name"/></br>
                         <input type="text" name="email" id="mejl" placeholder="Your Email"/></br>
                         <p>With what can I help you:</p></br>
-                        <input type="checkbox" name="html" id="html"/>HTML
-                        <input type="checkbox" name="css" id="css"/>CSS
-                        <input type="checkbox" name="bot" id="bot"/>BOOTSTRAP
+                        <input type="checkbox" name="html" id="html"/>HTML<br/>
+                        <input type="checkbox" name="css" id="css"/>CSS<br/>
+                        <input type="checkbox" name="bot" id="bot"/>BOOTSTRAP<br/>
                         <input type="checkbox" name="s" id="s"/>SASS
-                        <p>What do you have in mind: </p></br>
+                        <p>Need help with a project:</p></br>
                         <textarea id="poruka" name="poruka">
                         </textarea></br>
                         <input type="submit" name="dugme" value="SEND"/>
@@ -177,33 +176,34 @@
         </div>
         <footer>
             <div class="region2 d-flex ">
-                <div class="blok4 width text">
+                <div class="blok4 width centar">
                     <h3>LINKS</h3>
-                    <ul >
-                        <li>
-                            <a href="index.html">HOME</a>
-                            <a href="#about">ABOUT</a>
-                            <a href="#skills">SKILLS</a>
-                            <a href="#projects">PROJECTS</a>
-                            <a href="#contact">CONTACT</a>
-                        </li>
-                    </ul>     
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#skills">SKILLS</a></li>  
+                            <li><a href="#projects">PROJECTS</a></li> 
+                            <li><a href="#contact">CONTACT</a></li>  
+                        </ul>
+                    </nav>     
                 </div>
                 <div class="blok4 width2">
                     <h3>HAVE A QUESTION?</h3>
-                    <i class="fas fa-phone-square-alt"></i>  064 34 69 852 &nbsp;&nbsp;
-                    <i class="fas fa-envelope"></i>  anica02bazz&#64;gmail&#46;com
+                    <i class="fas fa-phone-square-alt margina"></i>&nbsp;  064 34 69 852 &nbsp;&nbsp;
+                    <i class="fas fa-envelope"></i>  &nbsp;anica&#46;radenkovic&#46;57&#46;20&#64;ict&#46;edu&#46;rs
                 </div>
-                <div class="blok4 small-font">
+                <div class="blok4 small-font kolone">
                     <h3>FINDE ME ON </h3>
                     <a href="https://www.instagram.com/_sweetheart55_/" target="_blank"><i class="fab fa-instagram-square"></i></a>
                     <a href="https://twitter.com/anika99black" target="_blank"><i class="fab fa-twitter-square"></i></a>
                     <a href="https://www.facebook.com/anica.radenkovic96/" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.linkedin.com/in/anica-radenkovi%C4%87-9519b3206/" target="_blank" ><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="xml/sitemap.xml" target="_blank"><i class="fas fa-sitemap"></i></a>
                 </div>
             </div>
-            <p>Copyright &copy; Visoka ICT skola</p>
+            <div id="copyr"><p>Copyright &copy; Visoka ICT skola</p></div>
         </footer>
     </body>
 </html>

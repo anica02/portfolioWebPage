@@ -1,0 +1,460 @@
+$tamnoplava:#1c1b57;
+$svetloplava:#5E60CE;
+$ljubicasta:#6f4dae;
+$tirkizna:#72EFDD;    
+$roza:#b9236d;  
+$bela:#ffff;  
+$srebrna:silver;        
+$mywidth:95%;   
+$margina:0px auto; 
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}       
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.centar{
+    text-align: center
+}        
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.space{
+    justify-content:space-around;
+}        
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');  
+body{
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(to right,$svetloplava,$tirkizna) ;
+}
+@mixin margina($leva, $desna){
+    margin-left:$leva;
+    margin-right: $desna;
+}
+@mixin margina2($gornja, $donja){
+    margin-top:$gornja;
+    margin-bottom: $donja;
+}      
+header{
+    width:$mywidth;
+    margin:10px auto;   
+    border-radius:20px;
+    border: outset $ljubicasta;
+    background-color:$ljubicasta;
+    padding:15px 0px;
+        #logo{
+            width:20%;
+            height:60px;
+            @include margina(10%,0% );}
+        nav{
+            ul{
+                margin-right:100px;
+                li{
+                    padding-top: 20px;
+                    a{
+                        color:$bela;
+                        @include margina(0px,60px );
+                        margin-right: 60px;
+                        font-weight: bold;}
+                }
+            }
+        }    
+}
+.cover-img img{
+    width:75%;
+    margin:20px auto;
+    position:relative;
+}    
+#text{
+            position:absolute;
+            top:39%;
+            left:18%;
+            text-align: center;
+            font-size: 17px;
+            color:$roza;
+            width:30%;
+            color:$roza;
+                h1{
+                    margin:15px 0px;
+                    color:$tamnoplava;
+                    text-shadow: 3px 4px $srebrna;}
+                p{
+                    @include margina2(50px,0px );}   
+                a{
+                    background-color:$ljubicasta;
+                    padding:15px 25px;
+                    border-radius: 20px;
+                    border:outset $ljubicasta;
+                    color:$bela}       
+
+        }
+        #slika img{
+            width:28%;
+            position:absolute;
+            top:22%;
+            right:20%;}    
+.container{
+    width:$mywidth;
+    margin:$margina;
+    background-color:rgba(254,247,245,0.8);
+    padding:50px 0px; 
+    @include margina2(30px,70px);
+    z-index: 1;
+    border-radius: 15px;
+    border: $srebrna outset ;
+        p{
+            font-size: 20px;
+            }
+        h1{
+            color:$tamnoplava;
+            text-shadow: 4px 5px $srebrna;
+            font-size:40px;
+            text-align: center;
+            @include margina2(0px,20px);
+            &::after{
+                content: "";
+                display: block;
+                margin:0px auto;
+                width:10%;
+                height:5px;
+                background-color:$svetloplava;
+                animation-name:proba;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                }
+            }
+        .region{
+            padding: 20px 0px;
+            position:relative;
+                #about{
+                    width:28%;
+                    @include margina(60px,0px );
+                    border:5px $ljubicasta;
+                    border-style: outset;
+                    border-radius: 7px;
+                    padding: 20px 10px;
+                        p{ 
+                            a{
+                            background-color:$svetloplava;
+                            padding:15px 40px;
+                            border-radius: 15px;
+                            border:inset $ljubicasta;
+                            color:$bela;
+                            @include margina(32%,0% );}
+                    
+                        }
+                    #text2{
+                        @include margina(35px,0px );
+                        @include margina2(0px,50px);
+                            p{
+                                @include margina2(0px,25px);
+                            }   
+                          
+                    }
+                }               
+                #nesto{
+                    width:100%;
+                    background-color:$ljubicasta;
+                    padding: 5px 0px;
+                    text-align: center;
+                    color:$bela;
+                    border-radius: 7px;
+                    border: inset $ljubicasta;
+                    @include margina2(0px,40px);
+                #text3{
+                    width:20%;
+                    border:5px $svetloplava;
+                    border-style: outset;
+                    border-radius: 7px;   
+                    padding: 20px 25px;
+                        img{
+                            @include margina2(10%,0%);
+                            @include margina(32%,0%);
+                            }
+                        p{
+                            @include margina2(0px,20px );
+                            }        
+                } 
+                #blok{
+                    width:30%;
+                    height:400px;
+                    background-color:#beafc4;
+                    @include margina(0px,60px );
+                    position: relative;
+                    @include margina2(50px,0px);
+                    border-radius:7px;
+                    border: 5px outset #beafc4;
+                    perspective: 1000px;
+                    #blok1{
+                        width:$mywidth;
+                        height:400px;
+                        border:9px solid $tirkizna;
+                        border-radius:7px;
+                        position:absolute;
+                        top:10%;
+                        left:2%;
+                        transform: translate(-4%,-10%) rotate(10deg);}
+                    #blok2{
+                        width:$mywidth;
+                        height:400px;
+                        border:9px solid $svetloplava;
+                        border-radius:7px;
+                        position:absolute;
+                        top:10%;
+                        right:5%;
+                        transform: translate(4%,-10%) rotate(-10deg);}    
+                    #slika1{
+                        width:80%;
+                        height:420px;
+                        background-image:url("../img/anica\ iseceno\ bolje\ krug.png");
+                        background-size:cover;
+                        position:absolute;
+                        left:8%;
+                        top:-10%;}
+                } 
+                                     
+        }
+}
+p span {
+    color:$tamnoplava;
+    font-weight: bold;
+}        
+@keyframes proba{
+    10% {width:50px;}
+    60%  {width:160px;}
+    100% {width:50px;}
+}    
+.main{
+    width:20%;
+    height:320px;
+    background-color: transparent;
+    perspective: 1000px;
+        .thecard{
+            position:relative;
+            width:100%;
+            height:100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+                .theFront{
+                    background-color:$bela;
+                    border-style: outset;
+                    border-radius: 10px;
+                    i{
+                        color:$tamnoplava;
+                        font-size: 110px;
+                        @include margina2(80px,0px);
+                        }
+                    h2{
+                        color:$tamnoplava;
+                        text-shadow: 3px 4px $srebrna;
+                        }        
+                }
+                .theBack{
+                    background:$tamnoplava;
+                    color:$bela;
+                    border-radius: 10px;
+                    border-style: outset; 
+                    transform:rotateY(180deg);
+                        h3{
+                            text-align: center;
+                            @include margina2(40px,30px);
+                            }
+                        p{
+                            @include margina(20px,0px );}        
+                }    
+        }
+}
+.main:hover .thecard{
+    transform:rotateY(180deg);
+} 
+.theFront, .theBack{
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    backface-visibility: hidden;
+} 
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projekat{
+    position:relative;
+    width:30%;
+    height:270px;
+    z-index: 1;
+        .image{
+            z-index:3;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            filter: grayscale(100%);
+            border-radius: 10px;}
+        .middle{
+            top: -9%;
+            left: 50%;
+            z-index:-1;
+            width:100%;
+            height: 15%;
+            transition: .5s ease;
+            display: none;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            border-radius: 7px;
+            @include margina2(320px,0px);
+            border-bottom: 2px solid $tamnoplava;
+                .info {
+                    color:$tamnoplava;
+                    text-shadow: 3px 4px silver;
+                    font-size: 18px;
+                    font-weight:bold;
+                    text-align: center;
+                    position: relative;}
+        }    
+}  
+.projekat:hover .image {
+    filter: none; 
+}    
+.projekat:hover .middle{
+    animation:text 0.5s ;
+    display: block;
+}
+@keyframes text{
+   0%{
+     top:-300px; }
+} 
+.message{
+    width:40%;}
+.message img{
+    width:80%;
+    @include margina(60px,0px );
+}
+.contact{
+    width:30%;
+    border:5px solid $ljubicasta;
+    border-radius: 10px;
+    padding: 20px;
+    color:$tamnoplava;
+       #forma{
+            margin:auto 20%;            
+                input {
+                    &[id="ime"] {
+                        width: 250px;
+                        height: 30px;
+                        padding: 5px 10px;
+                        border: none;
+                        border-bottom: 2px solid $tamnoplava;
+                        @include margina2(0px,10px);
+                        border-radius: 5px;
+                        background-color: rgba(0, 0, 0,0);
+                        outline: none;
+                    }
+                    &[id="mejl"] {
+                        width: 250px;
+                        height: 30px;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        border: none;
+                        border-bottom: 2px solid $tamnoplava;
+                        background-color: rgba(0, 0, 0, 0);
+                        outline: none;
+                    }
+                    &[type="checkbox"] {
+                        @include margina(10px,5px );
+                    }
+                    &[name="dugme"] {
+                        padding: 15px 30px;
+                        border-radius: 7px;
+                        @include margina(30%,0% );
+                        @include margina2(5%,0%);
+                        background-color:$svetloplava;
+                        color:$bela;}         
+                }
+                p{
+                    @include margina2(30px,0px);
+                    color:$tamnoplava;
+                    font-size: 20px;
+                    font-weight: bold;
+                }  
+        }  
+       
+} 
+#forma {
+    textarea{
+        width:270px;
+        height:70px;
+        border-radius: 5px;
+        border-bottom:2px solid #1c1b57;
+        background-color: rgba(0,0,0,0);
+        resize:none;
+        outline:none;
+    }
+    
+}  
+footer{
+    width:$mywidth;
+    margin:10px auto;
+    background-color:$ljubicasta;
+    padding:35px 0px;
+    border: outset $ljubicasta;
+    border-radius:20px;  
+    color:$bela;
+        .region2{
+            width: 100%;
+            margin:0px auto;
+            @include margina2(0px,30px);
+            .blok4{
+                width:39%;
+                text-align: center;
+                h3,i{
+                    @include margina2(0px,20px);
+                    color:$bela;}
+                a{
+                    color:$bela;
+                    @include margina2(0px,15px);}          
+            }
+        }
+}   
+#copyr p{
+    margin:0px auto;
+    font-size: 18px;
+}
+#copyr{
+    width:100%;
+    text-align: center;
+}     
+.small-font a i{
+    font-size: 30px;
+    @include margina(0px,10px );
+} 
+.blok4 i{
+    font-size: 20px;
+}
+.blok4 ul li a{
+    @include margina(20px,0px );
+}
+.blok4 ul li a:hover{
+    border-bottom: 2px solid #fff;
+}                               
+.width{
+    width:40%;
+}
+.width2{
+    width:35%;
+    text-align: center;
+}
+.centar{
+    text-align: center;
+}
+.f-wrap{
+    flex-flow: wrap row;
+}

@@ -1,0 +1,294 @@
+ @media screen and (max-width: 1617px){
+    #text{
+    font-size: 16px;
+    width:32%;
+    }
+}
+ @media screen and (max-width: 1490px){
+    #text{
+        top:37%;
+        left:18%;
+        font-size: 16px;
+        width:32%;
+    }
+    .blok4{
+        width:35%;
+        text-align: center;
+    }
+    .width2{
+        width:35%;
+        margin-left: 3%;
+    }
+}
+@media screen and (max-width: 1425px){
+    #text{
+        top:37%;
+        left:18%;
+        font-size: 15px;
+        width:32%;
+    }
+    .message img{
+        width:100%;
+        
+    }
+    .contact{
+        width:35%;
+    }
+}    
+@media screen and (max-width: 1370px){
+    .message img{
+        width:100%;
+
+    }
+    .width2{
+        width:40%;
+    }
+    #blok{
+        margin-right: 30px;
+        margin-top: 80px;
+    }
+    #text{
+        top:37%;
+        left:18%;
+        font-size: 14px;
+        width:32%;
+    }
+}
+@media screen and (max-width: 1280px){
+    #text{
+        top:33%;
+        left:18%;
+        font-size: 14px;
+        width:32%;
+    }
+    #text2{
+        margin-left: 10px;
+    }
+}   
+@media screen and (max-width: 1257px){
+    #text2{
+        margin-left: 10px;
+    }
+    #blok{
+        width:28%;
+        margin-top: 80px;
+    }
+    #slika1{
+        width:90%;
+        left:10px;
+
+    }
+    .width2{
+        width:50%;
+    }
+    #text{
+        top:33%;
+        left:18%;
+        font-size: 14px;
+        width:32%;
+    }
+}
+@media screen and (max-width: 1200px){   
+   
+    #text{
+        top:33%;
+        left:18%;
+        font-size: 13px;
+        width:32%;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    #slika img{
+        width:25%;
+    }
+    .main{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1080px){   
+    #text{
+        top:30%;
+        left:18%;
+        font-size: 12px;
+        width:32%;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .message img{
+        display: none;
+    }
+    .contact{
+        position:relative;
+        right:20%;
+        padding:20px 30px;
+        width:45%;
+    }
+    .projekat{
+        width:27%;
+    }
+    .image{
+        height:200px;
+    }
+    .small-font a i{
+        font-size: 25px;
+        
+    }
+    header nav ul{
+        margin-right: 10px;
+    }
+    .projekat .image{
+        height:200px ;
+    }
+
+    
+}
+@media screen and (max-width: 1024px){  
+    .container .region #about{
+        width:40%;
+        margin: 0px;
+    }
+    .container .region #text3{
+        width:30%;  
+        margin: 0px; 
+    }
+    .f-wrap{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .container .region #blok{
+        width: 40%;
+    }
+    header nav ul{
+        margin-right: 0px;
+    }
+    .main{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .container p {
+        font-size: 20px;
+    }
+    .projekat .image{
+        height:200px ;
+    }
+    .projekat{
+        width: 40%;
+        margin-top: 25px;
+    }
+    .projekat .middle{
+        top: -25%;
+    }
+    header #logo{
+        margin-left: 2%;
+    }
+    
+    
+} 
+@media screen and (max-width: 900px){
+    #text{
+        top:27%;
+        left:18%;
+        font-size: 10px;
+        width:32%;
+    }
+    .container .region #about p{
+        font-size: 18px;
+    }
+    .container .region #text3 p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 860px){
+    footer nav ul{
+        flex-direction: column;
+    }
+    .width2{
+        font-size: 15px;
+    }
+    header{
+        flex-wrap: wrap;
+        justify-content: center!important;
+        padding: 15px;
+    }
+    header nav{
+       width:  100%;
+    }
+    header nav ul li a{
+        margin:5px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container .region #about{
+        width:70%;
+        padding:10px;
+        margin-bottom: 30px;
+        
+    }
+    .container .region #about p {
+        margin-bottom: 30px;
+    }
+    .container .region #text3{
+        width:70%;  
+        padding:10px;
+        
+    }
+    .container .region #text3 p{
+        margin-left:30px ;
+    }
+    .container .region #text3 img{
+       margin-left:40%;
+       margin-bottom: 20px;
+        
+    }
+
+}  
+@media screen and (max-width: 680px){
+    .container .region #blok {
+        width:60%;
+    }
+    .main{
+        width: 60%;
+    }
+    .projekat {
+        width: 60%;
+        margin-top: 25px;
+    }
+    .contact{
+        width: 100%;
+        right:10%; 
+        padding:20px 30px; 
+    }
+    footer .region2{
+        flex-wrap: wrap;
+    }
+    footer .region2 .blok4 .width, footer .region2 .blok4 .width2, footer .region2 .blok4{
+        width: 100%;
+    }
+    footer nav ul{
+        flex-direction: row;
+        justify-content:center!important;
+        
+    }
+    footer .region2 .blok4{
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    footer nav ul{
+        flex-direction: column;
+        justify-content:center!important;
+        
+    }
+    .contact{
+        width: auto;
+        padding: 5px;
+    }
+    .contact form{
+        margin: auto 10%!important;
+    }
+}
+
