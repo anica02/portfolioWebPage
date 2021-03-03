@@ -94,12 +94,13 @@ header{
                     border:outset $ljubicasta;
                     color:$bela}       
 
-        }
-        #slika img{
+}
+#slika img{
             width:28%;
             position:absolute;
             top:22%;
-            right:20%;}    
+            right:20%;
+}            
 .container{
     width:$mywidth;
     margin:$margina;
@@ -167,7 +168,7 @@ header{
                     color:$bela;
                     border-radius: 7px;
                     border: inset $ljubicasta;
-                    @include margina2(0px,40px);
+                    @include margina2(0px,40px);}
                 #text3{
                     width:20%;
                     border:5px $svetloplava;
