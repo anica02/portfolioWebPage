@@ -191,7 +191,7 @@
         width:32%;
     }
     #text p  a{
-        font-size: 10px;
+        display:none;
     }
     
     
@@ -294,6 +294,9 @@
         left:0px;
         width: 80%;
     }
+    #text{
+        font-size: 8px;
+    }
 }
 @media screen and (max-width: 400px){
     footer nav ul{
@@ -341,6 +344,10 @@
     .projekat{
         width:90%;
     }
+    #text{
+        font-size: 6px;
+    }
+}
 }
 
 
