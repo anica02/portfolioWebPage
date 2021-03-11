@@ -354,6 +354,10 @@
     #text{
         font-size: 6px;
     }
+    #slika img{
+        top:25%;
+    }
+
     
 }
 
